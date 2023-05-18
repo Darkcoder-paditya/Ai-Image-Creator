@@ -41,7 +41,7 @@ const CreatePost = () => {
         //   console.error(error); // Log any error that occurs
         // });
 // https://a-image-creator.onrender.com
-        const response = await fetch('http://a-image-creator.onrender.com/api/v1/dalle', {
+        const response = await fetch('https://a-image-creator.onrender.com/api/v1/dalle', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -69,7 +69,7 @@ const CreatePost = () => {
     if (form.prompt && form.photo) {
       setLoading(true);
       try {
-        const response = await fetch('http://a-image-creator.onrender.com/api/v1/post', {
+        const response = await fetch('https://a-image-creator.onrender.com/api/v1/post', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
